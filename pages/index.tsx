@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -13,8 +14,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+
         <h1 className={styles.title}>
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          Read{' '}
+          <Link href="posts/first">
+             <a>first post</a>
+          </Link>
         </h1>
 
         <p className={styles.description}>
